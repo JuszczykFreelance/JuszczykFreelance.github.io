@@ -6775,6 +6775,9 @@ body.home #main-content #what h1 {
 body.home #main-content #about .col-xs-6:last-child {
   padding-right: 0;
 }
+body.home #main-content #about .col-xs-6:last-child img {
+  width: 100%;
+}
 footer {
   background: #000;
   color: #FFF;
