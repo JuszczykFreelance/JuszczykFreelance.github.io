@@ -6227,6 +6227,72 @@ body.home #main-content #who .row:last-child img {
   border-radius: 999px;
   margin-bottom: 10px;
 }
+body.home #main-content #get .row .btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body.home #main-content #get .row .btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body.home #main-content #get .row .btn-1 {
+  border: 3px solid #000;
+  color: #000;
+}
+body.home #main-content #get .row .btn-1d {
+  overflow: hidden;
+}
+body.home #main-content #get .row .btn-1d a {
+  color: #cc8400;
+}
+body.home #main-content #get .row .btn-1d::after {
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+  height: 103%;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+body.home #main-content #get .row .btn-1d:hover a,
+body.home #main-content #get .row .btn-1d:active a {
+  color: #2ad2c9;
+}
+body.home #main-content #get .row .btn-1d:hover::after {
+  width: 90%;
+  opacity: 1;
+}
+body.home #main-content #get .row .btn-1d:active::after {
+  width: 101%;
+  opacity: 1;
+}
 footer {
   background: #000;
   color: #FFF;
