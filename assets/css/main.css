@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6724,13 +6725,11 @@ button.close {
     display: none !important;
   }
 }
-body.home #lead-image {
-  padding-top: 50px;
+body {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
 }
-body.home #lead-image .row {
-  background: url(../img/mic.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+img {
+  max-width: 100%;
 }
 .no-marg {
   margin: 0;
@@ -6744,4 +6743,41 @@ body.home #lead-image .row {
 .text-container {
   background: rgba(0, 0, 0, 0.5);
   color: #FFF;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-thin {
+  font-weight: 300;
+}
+body.home #lead-image {
+  padding-top: 50px;
+  position: relative;
+}
+body.home #lead-image .row {
+  background: url(../img/mic.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+body.home #lead-image .row #lead-text {
+  position: absolute;
+  left: 25%;
+  bottom: 50%;
+  width: 50%;
+  text-align: center;
+}
+body.home #lead-image .row #lead-text h1 {
+  margin: 15px 0;
+}
+body.home #main-content #what h1 {
+  margin: 50px 0 15px 0;
+}
+body.home #main-content #about .col-xs-6:last-child {
+  padding-right: 0;
+}
+footer {
+  background: #000;
+  color: #FFF;
+  padding: 25px 0;
+  margin-top: 50px;
 }
