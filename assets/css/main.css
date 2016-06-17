@@ -6293,6 +6293,9 @@ body.home #main-content #get .row .btn-1d:active::after {
   width: 101%;
   opacity: 1;
 }
+nav.navbar {
+  font-size: 21px;
+}
 footer {
   background: #000;
   color: #FFF;
